@@ -1,26 +1,13 @@
 # vue-ticker
+Ticker plugin for Vue.js
 
-## Project setup
-```
-yarn install
-```
+## Example
+https://112ka.github.io/example/vue-ticker/
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## Install
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Usage
 
-### Run your tests
-```
-yarn run test
-```
+## Licensing
 
-### Lints and fixes files
-```
-yarn run lint
-```
+MIT

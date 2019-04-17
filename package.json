@@ -1,16 +1,21 @@
 {
   "name": "vue-ticker",
   "version": "0.1.0",
-  "private": true,
+  "author": "112KA",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:demo": "vue-cli-service build demo/index.html --dest dist/demo",
+    "lint": "vue-cli-service lint",
+    "demo": "vue-cli-service demo",
+    "docs": "npm run docs:serve",
+    "docs:build": "vue-cli-service docs --mode build",
+    "docs:serve": "vue-cli-service docs --mode serve",
+    "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
+    "start": "vue-cli-service serve"
   },
-  "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.6"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
     "@vue/cli-plugin-eslint": "^3.0.5",
@@ -18,6 +23,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue": "^2.6.6",
+    "vue-cli-plugin-p11n": "^0.2.1",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -43,5 +50,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "files": [
+    "dist/vue-ticker.common.js",
+    "dist/vue-ticker.umd.min.js",
+    "dist/vue-ticker.umd.js",
+    "dist/vue-ticker.esm.js",
+    "src"
+  ],
+  "jsdelivr": "dist/vue-ticker.umd.min.js",
+  "main": "dist/vue-ticker.common.js",
+  "module": "dist/vue-ticker.esm.js",
+  "sideeffects": false,
+  "unpkg": "dist/vue-ticker.umd.min.js"
 }
