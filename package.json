@@ -2,6 +2,7 @@
   "name": "vue-ticker",
   "version": "0.1.0",
   "author": "112KA",
+  "description": "Ticker plugin for Vue.js",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -14,6 +15,10 @@
     "docs:serve": "vue-cli-service docs --mode serve",
     "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
     "start": "vue-cli-service serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/112KA/vue-ticker"
   },
   "dependencies": {},
   "devDependencies": {
@@ -62,5 +67,10 @@
   "main": "dist/vue-ticker.common.js",
   "module": "dist/vue-ticker.esm.js",
   "sideeffects": false,
-  "unpkg": "dist/vue-ticker.umd.min.js"
+  "unpkg": "dist/vue-ticker.umd.min.js",
+  "keywords": [
+    "vue",
+    "ticker",
+    "framerate"
+  ]
 }
